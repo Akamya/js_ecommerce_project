@@ -1,0 +1,2 @@
+- 3 fichiers JSON: Les produits, les sexes(pour chat,chatte), les marques
+- Accueil: Chat, chatte, marques
