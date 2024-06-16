@@ -1,4 +1,4 @@
-import users from "../../storage/users.json";
+import produits from "../../storage/produits.json";
 import { RoleBadge } from "./Partials/RoleBadge";
 
 /**
@@ -12,7 +12,7 @@ export const User = (element) => {
   const url = new URL(window.location.href);
   const userId = parseInt(url.searchParams.get("id"));
   // on récupère l'utilisateur correspondant à l'identifiant
-  const user = users.find((user) => user.id === userId);
+  const user = produits.find((user) => user.id === userId);
 
   // si l'utilisateur n'existe pas, on affiche un message d'erreur
   if (!user) {

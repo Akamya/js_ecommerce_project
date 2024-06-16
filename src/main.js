@@ -5,15 +5,15 @@ import { app } from "./framework/app";
 import { Counter } from "./pages/Counter";
 import { Contact } from "./pages/Contact";
 import { Home } from "./pages/Home";
-import { Users } from "./pages/Users/Users";
-import { User } from "./pages/Users/User";
+import { Produits } from "./pages/Produits/Produits";
+import { User } from "./pages/Produits/User";
 
 const routes = {
   "/": Home,
   "/compteur": Counter,
   "/contact": Contact,
   "/utilisateur": User,
-  "/utilisateurs": Users,
+  "/produits": Produits,
 };
 
 app("#app", routes);

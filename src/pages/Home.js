@@ -9,8 +9,7 @@ import images from "../storage/homepageCarousel.json";
  */
 export const Home = (element) => {
   element.innerHTML = `
-    <h1>Accueil</h1>
-    <p>Bienvenue sur une app !</p>
+  <h1>Produits</h1>
     ${Carousel(images)}
     `;
 };
