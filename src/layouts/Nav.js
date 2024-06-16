@@ -18,9 +18,8 @@ export const Nav = (element) => {
    */
   const links = [
     { href: "/", text: "Accueil" },
-    { href: "/compteur", text: "Compteur" },
-    { href: "/contact", text: "Contact" },
     { href: "/produits", text: "Produits" },
+    { href: "/contact", text: "Contact" },
   ];
 
   element.innerHTML = `

@@ -29,7 +29,7 @@ export const Produits = (element) => {
         </button>
       </div>
     </div>
-    <div id="produit-list"></div>
+    <div id="produits-list"></div>
     `;
 
   const produitsList = element.querySelector("#produits-list");
@@ -37,14 +37,14 @@ export const Produits = (element) => {
   // Fonction pour afficher les utilisateurs en fonction du mode d'affichage
   const render = () => {
     if (mode === "grid") {
-      CardsList(produitsList, produits, UserCard, ["name", "email"]);
+      CardsList(produitsList, produits, UserCard, ["name", "description"]);
     } else if (mode === "table") {
       DataTable(
         produitsList,
         produits,
         UserRow,
-        ["name", "email"],
-        ["Nom", "Email", "Rôle", "Actions"]
+        ["name", "description"],
+        ["Nom", "Description", "Rôle", "Actions"]
       );
     }
   };

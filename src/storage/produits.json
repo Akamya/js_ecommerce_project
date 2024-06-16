@@ -1,128 +1,149 @@
 [
   {
     "id": 1,
-    "name": "Marie Dubois",
-    "email": "marie.dubois@example.com",
-    "role": "admin"
+    "image": "./public/produits/blue.jpg",
+    "name": "cc",
+    "description": "cc",
+    "price": "admin"
   },
   {
     "id": 2,
+    "image": "./public/produits/green.jpg",
     "name": "Jean Martin",
-    "email": "jean.martin@example.com",
-    "role": "utilisateur"
+    "description": "jean.martin@example.com",
+    "price": "utilisateur"
   },
   {
     "id": 3,
+    "image": "./public/produits/orange.jpg",
     "name": "Sophie Lambert",
-    "email": "sophie.lambert@example.com",
-    "role": "admin"
+    "description": "sophie.lambert@example.com",
+    "price": "admin"
   },
   {
     "id": 4,
+    "image": "./public/produits/pink.jpg",
     "name": "Khalid Ben Ali",
-    "email": "khalid.benali@example.com",
-    "role": "utilisateur"
+    "description": "khalid.benali@example.com",
+    "price": "utilisateur"
   },
   {
     "id": 5,
+    "image": "./public/produits/turquoise.jpg",
     "name": "Laura Dubois",
-    "email": "laura.dubois@example.com",
-    "role": "admin"
+    "description": "laura.dubois@example.com",
+    "price": "admin"
   },
   {
     "id": 6,
+    "image": "./public/produits/white.jpg",
     "name": "Luc Lefevre",
-    "email": "luc.lefevre@example.com",
-    "role": "utilisateur"
+    "description": "luc.lefevre@example.com",
+    "price": "utilisateur"
   },
   {
     "id": 7,
+    "image": "./public/produits/black.jpg",
     "name": "Julie Verhoeven",
-    "email": "julie.verhoeven@example.com",
-    "role": "admin"
+    "description": "julie.verhoeven@example.com",
+    "price": "admin"
   },
   {
     "id": 8,
+    "image": "./public/produits/brown.jpg",
     "name": "Pierre Janssens",
-    "email": "pierre.janssens@example.com",
-    "role": "utilisateur"
+    "description": "pierre.janssens@example.com",
+    "price": "utilisateur"
   },
   {
     "id": 9,
+    "image": "./public/produits/purple.jpg",
     "name": "Fatoumata Koulibaly",
-    "email": "fatoumata.koulibaly@example.com",
-    "role": "admin"
+    "description": "fatoumata.koulibaly@example.com",
+    "price": "admin"
   },
   {
     "id": 10,
+    "image": "./public/produits/yellow.jpg",
     "name": "Nicolas Leroy",
-    "email": "nicolas.leroy@example.com",
-    "role": "utilisateur"
+    "description": "nicolas.leroy@example.com",
+    "price": "utilisateur"
   },
   {
     "id": 11,
+    "image": "./public/produits/gris.jpg",
     "name": "Camille Mercier",
-    "email": "camille.mercier@example.com",
-    "role": "admin"
+    "description": "camille.mercier@example.com",
+    "price": "admin"
   },
   {
     "id": 12,
+    "image": "./public/produits/marine.jpg",
     "name": "Hugo Maes",
-    "email": "hugo.maes@example.com",
-    "role": "utilisateur"
+    "description": "hugo.maes@example.com",
+    "price": "utilisateur"
   },
   {
     "id": 13,
+    "image": "./public/produits/rubans.jpg",
     "name": "Elise Simon",
-    "email": "elise.simon@example.com",
-    "role": "admin"
+    "description": "elise.simon@example.com",
+    "price": "admin"
   },
   {
     "id": 14,
+    "image": "./public/produits/flowers.jpg",
     "name": "Antoine Thomas",
-    "email": "antoine.thomas@example.com",
-    "role": "utilisateur"
+    "description": "antoine.thomas@example.com",
+    "price": "utilisateur"
   },
   {
     "id": 15,
+    "image": "./public/produits/butterflies.jpg",
     "name": "Amina Fabre",
-    "email": "amina.fabre@example.com",
-    "role": "admin"
+    "description": "amina.fabre@example.com",
+    "price": "admin"
   },
   {
     "id": 16,
+    "image": "./public/produits/hearts.jpg",
     "name": "Lucas Dupuis",
-    "email": "lucas.dupuis@example.com",
-    "role": "utilisateur"
+    "description": "lucas.dupuis@example.com",
+    "price": "utilisateur"
   },
   {
     "id": 17,
+    "image": "./public/produits/icecreams.jpg",
     "name": "Cécile Dufour",
-    "email": "cecile.dufour@example.com",
-    "role": "admin"
+    "description": "cecile.dufour@example.com",
+    "price": "admin"
   },
   {
     "id": 18,
+    "image": "./public/produits/moons.jpg",
     "name": "David Laurent",
-    "email": "david.laurent@example.com",
-    "role": "utilisateur"
+    "description": "david.laurent@example.com",
+    "price": "utilisateur"
   },
   {
     "id": 19,
+    "image": "./public/produits/stars.jpg",
     "name": "Alice Dubois",
-    "email": "alice.dubois@example.com",
-    "role": "admin"
+    "description": "alice.dubois@example.com",
+    "price": "admin"
   },
   {
     "id": 20,
+    "image": "./public/produits/suns.jpg",
     "name": "Julien Petit",
-    "email": "julien.petit@example.com",
-    "role": "utilisateur"
+    "description": "julien.petit@example.com",
+    "price": "utilisateur"
   },
   {
     "id": 21,
-    "name": "Aïsha Traoré",
-    "email": "aisha.traore@example.com",
-    "role": "utilisateur"
+    "image": "./public/produits/chocolate.jpg",
+    "name": "Julien Petit",
+    "description": "julien.petit@example.com",
+    "price": "utilisateur"
   }
 ]

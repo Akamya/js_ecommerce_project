@@ -4,8 +4,8 @@ import { RoleBadge } from "./RoleBadge";
  * @typedef {Object} User
  * @property {number} id - L'identifiant de l'utilisateur.
  * @property {string} name - Le nom de l'utilisateur.
- * @property {string} email - L'adresse email de l'utilisateur.
- * @property {string} role - Le rôle de l'utilisateur.
+ * @property {string} description - L'adresse email de l'utilisateur.
+ * @property {string} price - Le rôle de l'utilisateur.
  */
 
 /**
@@ -18,8 +18,8 @@ export const UserRow = (user) => {
   return `
     <tr>
       <td>${user.name}</td>
-      <td>${user.email}</td>
-      <td>${RoleBadge(user.role)}</td>
+      <td>${user.description}</td>
+      <td>${RoleBadge(user.price)}</td>
       <td><a class="btn btn-primary btn-sm" href="/utilisateur?id=${
         user.id
       }"><i class="ri-search-eye-line"></i></a></td>

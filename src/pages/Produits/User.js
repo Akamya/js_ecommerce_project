@@ -25,7 +25,7 @@ export const User = (element) => {
 
   element.innerHTML = `
     <h1>${user.name}</h1>
-    <p>${user.email}</p>
+    <p>${user.description}</p>
     ${RoleBadge(user.role)}
     `;
 };
