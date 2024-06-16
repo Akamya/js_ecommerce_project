@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "name": "Marie Dubois",
+    "email": "marie.dubois@example.com",
+    "role": "admin"
+  },
+  {
+    "id": 2,
+    "name": "Jean Martin",
+    "email": "jean.martin@example.com",
+    "role": "utilisateur"
+  },
+  {
+    "id": 3,
+    "name": "Sophie Lambert",
+    "email": "sophie.lambert@example.com",
+    "role": "admin"
+  },
+  {
+    "id": 4,
+    "name": "Khalid Ben Ali",
+    "email": "khalid.benali@example.com",
+    "role": "utilisateur"
+  },
+  {
+    "id": 5,
+    "name": "Laura Dubois",
+    "email": "laura.dubois@example.com",
+    "role": "admin"
+  },
+  {
+    "id": 6,
+    "name": "Luc Lefevre",
+    "email": "luc.lefevre@example.com",
+    "role": "utilisateur"
+  },
+  {
+    "id": 7,
+    "name": "Julie Verhoeven",
+    "email": "julie.verhoeven@example.com",
+    "role": "admin"
+  },
+  {
+    "id": 8,
+    "name": "Pierre Janssens",
+    "email": "pierre.janssens@example.com",
+    "role": "utilisateur"
+  },
+  {
+    "id": 9,
+    "name": "Fatoumata Koulibaly",
+    "email": "fatoumata.koulibaly@example.com",
+    "role": "admin"
+  },
+  {
+    "id": 10,
+    "name": "Nicolas Leroy",
+    "email": "nicolas.leroy@example.com",
+    "role": "utilisateur"
+  },
+  {
+    "id": 11,
+    "name": "Camille Mercier",
+    "email": "camille.mercier@example.com",
+    "role": "admin"
+  },
+  {
+    "id": 12,
+    "name": "Hugo Maes",
+    "email": "hugo.maes@example.com",
+    "role": "utilisateur"
+  },
+  {
+    "id": 13,
+    "name": "Elise Simon",
+    "email": "elise.simon@example.com",
+    "role": "admin"
+  },
+  {
+    "id": 14,
+    "name": "Antoine Thomas",
+    "email": "antoine.thomas@example.com",
+    "role": "utilisateur"
+  },
+  {
+    "id": 15,
+    "name": "Amina Fabre",
+    "email": "amina.fabre@example.com",
+    "role": "admin"
+  },
+  {
+    "id": 16,
+    "name": "Lucas Dupuis",
+    "email": "lucas.dupuis@example.com",
+    "role": "utilisateur"
+  },
+  {
+    "id": 17,
+    "name": "Cécile Dufour",
+    "email": "cecile.dufour@example.com",
+    "role": "admin"
+  },
+  {
+    "id": 18,
+    "name": "David Laurent",
+    "email": "david.laurent@example.com",
+    "role": "utilisateur"
+  },
+  {
+    "id": 19,
+    "name": "Alice Dubois",
+    "email": "alice.dubois@example.com",
+    "role": "admin"
+  },
+  {
+    "id": 20,
+    "name": "Julien Petit",
+    "email": "julien.petit@example.com",
+    "role": "utilisateur"
+  },
+  {
+    "id": 21,
+    "name": "Aïsha Traoré",
+    "email": "aisha.traore@example.com",
+    "role": "utilisateur"
+  }
+]
