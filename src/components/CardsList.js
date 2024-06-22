@@ -17,6 +17,7 @@ export const CardsList = (element, items, itemTemplate, searchableFields) => {
     parseInt(new URL(window.location).searchParams.get("page")) || 1;
   let searchInputValue =
     new URL(window.location).searchParams.get("search") || "";
+
   // On initialise une copie des items pour les filtrer et paginer
   // cela nous permet de ne pas modifier le tableau d'origine
   let filteredItems = items;
@@ -29,6 +30,21 @@ export const CardsList = (element, items, itemTemplate, searchableFields) => {
       <div class="col mb-2">
         ${TextInput("search", searchInputValue, "search", "Rechercher...")}
       </div>
+       <div class="mb-3 col">
+          <select class="form-select" id="input-filtre-sexe">
+            <option value="all" selected>Selectionnez un sex</option>
+            <option value="1">Chat</option>
+            <option value="2">Chatte</option>
+          </select>
+        </div>
+         <div class="mb-3 col">
+          <select class="form-select" id="input-filtre-marque">
+            <option value="all" selected>Selectionnez une marque</option>
+            <option value="1">Crocs</option>
+            <option value="2">Nike</option>
+            <option value="3">Louboutin</option>
+          </select>
+        </div>
     </div>
     <div id="${id}" class="row row-cols-2 row-cols-lg-3">
     </div>
@@ -38,6 +54,23 @@ export const CardsList = (element, items, itemTemplate, searchableFields) => {
   const searchInput = element.querySelector("input#search");
   const listElement = element.querySelector(`#${id}`);
   const paginationElement = element.querySelector("#pagination");
+
+  let selectedSexe = "all";
+  let selectedMarque = "all";
+
+  // Filtre Sexe
+  const filtreSelectSexe = document.querySelector("#input-filtre-sexe");
+  filtreSelectSexe.addEventListener("change", () => {
+    selectedSexe = filtreSelectSexe.value;
+    filterAndPaginate();
+  });
+
+  // Filtre Marque
+  const filtreSelectMarque = document.querySelector("#input-filtre-marque");
+  filtreSelectMarque.addEventListener("change", () => {
+    selectedMarque = filtreSelectMarque.value;
+    filterAndPaginate();
+  });
 
   // Fonction pour afficher la liste des items
   const renderList = (filteredItems) => {
@@ -55,20 +88,26 @@ export const CardsList = (element, items, itemTemplate, searchableFields) => {
 
   // Fonction pour filtrer et paginer les items
   const filterAndPaginate = (perPage = 12) => {
-    const value = searchInputValue.toLowerCase();
-    // On filtre les items en fonction de la valeur du champ de recherche
-    // et des champs de recherche spécifiés
-    if (value !== "") {
+    // on filtre une premiere fois sur base des dropdown
+    if (selectedSexe !== "all") {
       filteredItems = items.filter(
-        (item) =>
-          searchableFields.filter((field) =>
-            item[field].toLowerCase().includes(value)
-          ).length > 0
+        (item) => item.sexeID === parseInt(selectedSexe)
       );
     } else {
       filteredItems = items;
     }
 
+    const value = searchInputValue.toLowerCase();
+    // On filtre les items en fonction de la valeur du champ de recherche
+    // et des champs de recherche spécifiés
+    if (value !== "") {
+      filteredItems = filteredItems.filter(
+        (item) =>
+          searchableFields.filter((field) =>
+            item[field].toLowerCase().includes(value)
+          ).length > 0
+      );
+    }
     // On calcule l'index de départ et de fin des items à afficher
     const start = (currentPage - 1) * perPage;
     const end = Math.min(start + perPage, filteredItems.length);

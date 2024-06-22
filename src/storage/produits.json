@@ -2,8 +2,8 @@
   {
     "id": 1,
     "image": "./public/produits/blue.jpg",
-    "name": "cc",
-    "description": "cc",
+    "name": "Crocs",
+    "description": "Paillettes",
     "sexeID": 2,
     "price": "13€",
     "marqueID": 2
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "image": "./public/produits/green.jpg",
-    "name": "Jean Martin",
+    "name": "Nike",
     "description": "jean.martin@example.com",
     "sexeID": 1,
     "price": "13€",
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "image": "./public/produits/orange.jpg",
-    "name": "Sophie Lambert",
+    "name": "Louboutin",
     "description": "sophie.lambert@example.com",
     "sexeID": 1,
     "price": "13€",
