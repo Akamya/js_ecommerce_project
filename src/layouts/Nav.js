@@ -11,7 +11,7 @@ import { ROUTE_CHANGED_EVENT } from "../framework/app";
  * @returns {void}
  */
 export const Nav = (element) => {
-  const appName = "Une App";
+  const appName = "Cat Shoes";
 
   /**
    * @type {Link[]}

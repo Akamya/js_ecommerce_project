@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nom": "Crocs",
+    "description": "La légendaire marque de confort débarque chez nos amis félins. Les Crocs pour chats offrent une légèreté et une souplesse incomparables, parfaites pour les chats actifs. Leur design unique permet une ventilation optimale et un ajustement parfait pour des pattes toujours à l’aise.",
+    "image": "./public/produits/blue.jpg"
+  },
+  {
+    "id": 2,
+    "nom": "Nike",
+    "description": "Offrez à votre chat le dynamisme et la performance de la célèbre marque Nike. Conçues pour les félins sportifs, les chaussures Nike pour chats sont idéales pour les courses et les jeux effrénés. Avec leur look moderne et leurs matériaux de haute qualité, elles allient style et durabilité.",
+    "image": "./public/produits/blue.jpg"
+  },
+  {
+    "id": 3,
+    "nom": "Louboutin",
+    "description": "Pour les chats qui aiment se démarquer, les chaussures Louboutin pour chats sont le summum de l’élégance. Avec leurs célèbres semelles rouges et leur design raffiné, elles transforment chaque pas en une déclaration de mode. Parfaites pour les occasions spéciales, ces chaussures apporteront une touche de glamour à la démarche de votre chat.",
+    "image": "./public/produits/blue.jpg"
+  }
+]

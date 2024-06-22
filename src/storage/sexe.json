@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "nom": "Chat",
+    "titre": "Chaussures pour Chats",
+    "description": "Nos chaussures pour chats sont conçues pour offrir un confort optimal tout en ajoutant une touche de style à leurs pattes. Adaptées à toutes les occasions, de la sieste sur le canapé aux explorations en extérieur, nos chaussures garantissent protection et élégance. Faites plaisir à votre chat avec une paire qui correspond à sa personnalité unique."
+  },
+  {
+    "id": 2,
+    "nom": "Chatte",
+    "titre": "Chaussures pour Chattes",
+    "description": "Les chattes méritent aussi de se sentir spéciales. Nos chaussures pour chattes allient charme et robustesse, idéales pour celles qui aiment se pavaner avec grâce. Disponibles en plusieurs tailles et styles, nos modèles sont parfaits pour mettre en valeur la féminité et la sophistication de votre chère chatte."
+  }
+]

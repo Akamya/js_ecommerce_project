@@ -4,146 +4,188 @@
     "image": "./public/produits/blue.jpg",
     "name": "cc",
     "description": "cc",
-    "price": "admin"
+    "sexeID": 2,
+    "price": "13€",
+    "marqueID": 2
   },
   {
     "id": 2,
     "image": "./public/produits/green.jpg",
     "name": "Jean Martin",
     "description": "jean.martin@example.com",
-    "price": "utilisateur"
+    "sexeID": 1,
+    "price": "13€",
+    "marqueID": 2
   },
   {
     "id": 3,
     "image": "./public/produits/orange.jpg",
     "name": "Sophie Lambert",
     "description": "sophie.lambert@example.com",
-    "price": "admin"
+    "sexeID": 1,
+    "price": "13€",
+    "marqueID": 1
   },
   {
     "id": 4,
     "image": "./public/produits/pink.jpg",
     "name": "Khalid Ben Ali",
     "description": "khalid.benali@example.com",
-    "price": "utilisateur"
+    "sexeID": 2,
+    "price": "13€",
+    "marqueID": 3
   },
   {
     "id": 5,
     "image": "./public/produits/turquoise.jpg",
     "name": "Laura Dubois",
     "description": "laura.dubois@example.com",
-    "price": "admin"
+    "sexeID": 1,
+    "price": "13€",
+    "marqueID": 2
   },
   {
     "id": 6,
     "image": "./public/produits/white.jpg",
     "name": "Luc Lefevre",
     "description": "luc.lefevre@example.com",
-    "price": "utilisateur"
+    "sexeID": 2,
+    "price": "13€",
+    "marqueID": 2
   },
   {
     "id": 7,
     "image": "./public/produits/black.jpg",
     "name": "Julie Verhoeven",
     "description": "julie.verhoeven@example.com",
-    "price": "admin"
+    "sexeID": 1,
+    "price": "13€",
+    "marqueID": 2
   },
   {
     "id": 8,
     "image": "./public/produits/brown.jpg",
     "name": "Pierre Janssens",
     "description": "pierre.janssens@example.com",
-    "price": "utilisateur"
+    "sexeID": 2,
+    "price": "13€",
+    "marqueID": 2
   },
   {
     "id": 9,
     "image": "./public/produits/purple.jpg",
     "name": "Fatoumata Koulibaly",
     "description": "fatoumata.koulibaly@example.com",
-    "price": "admin"
+    "sexeID": 1,
+    "price": "13€",
+    "marqueID": 2
   },
   {
     "id": 10,
     "image": "./public/produits/yellow.jpg",
     "name": "Nicolas Leroy",
     "description": "nicolas.leroy@example.com",
-    "price": "utilisateur"
+    "sexeID": 2,
+    "price": "13€",
+    "marqueID": 2
   },
   {
     "id": 11,
     "image": "./public/produits/gris.jpg",
     "name": "Camille Mercier",
     "description": "camille.mercier@example.com",
-    "price": "admin"
+    "sexeID": 1,
+    "price": "13€",
+    "marqueID": 2
   },
   {
     "id": 12,
     "image": "./public/produits/marine.jpg",
     "name": "Hugo Maes",
     "description": "hugo.maes@example.com",
-    "price": "utilisateur"
+    "sexeID": 2,
+    "price": "13€",
+    "marqueID": 2
   },
   {
     "id": 13,
     "image": "./public/produits/rubans.jpg",
     "name": "Elise Simon",
     "description": "elise.simon@example.com",
-    "price": "admin"
+    "sexeID": 1,
+    "price": "13€",
+    "marqueID": 2
   },
   {
     "id": 14,
     "image": "./public/produits/flowers.jpg",
     "name": "Antoine Thomas",
     "description": "antoine.thomas@example.com",
-    "price": "utilisateur"
+    "sexeID": 2,
+    "price": "13€",
+    "marqueID": 2
   },
   {
     "id": 15,
     "image": "./public/produits/butterflies.jpg",
     "name": "Amina Fabre",
     "description": "amina.fabre@example.com",
-    "price": "admin"
+    "sexeID": 1,
+    "price": "13€",
+    "marqueID": 2
   },
   {
     "id": 16,
     "image": "./public/produits/hearts.jpg",
     "name": "Lucas Dupuis",
     "description": "lucas.dupuis@example.com",
-    "price": "utilisateur"
+    "sexeID": 2,
+    "price": "13€",
+    "marqueID": 2
   },
   {
     "id": 17,
     "image": "./public/produits/icecreams.jpg",
     "name": "Cécile Dufour",
     "description": "cecile.dufour@example.com",
-    "price": "admin"
+    "sexeID": 1,
+    "price": "13€",
+    "marqueID": 2
   },
   {
     "id": 18,
     "image": "./public/produits/moons.jpg",
     "name": "David Laurent",
     "description": "david.laurent@example.com",
-    "price": "utilisateur"
+    "sexeID": 2,
+    "price": "13€",
+    "marqueID": 2
   },
   {
     "id": 19,
     "image": "./public/produits/stars.jpg",
     "name": "Alice Dubois",
     "description": "alice.dubois@example.com",
-    "price": "admin"
+    "sexeID": 1,
+    "price": "13€",
+    "marqueID": 2
   },
   {
     "id": 20,
     "image": "./public/produits/suns.jpg",
     "name": "Julien Petit",
     "description": "julien.petit@example.com",
-    "price": "utilisateur"
+    "sexeID": 2,
+    "price": "13€",
+    "marqueID": 2
   },
   {
     "id": 21,
     "image": "./public/produits/chocolate.jpg",
     "name": "Julien Petit",
     "description": "julien.petit@example.com",
-    "price": "utilisateur"
+    "sexeID": 2,
+    "price": "13€",
+    "marqueID": 2
   }
 ]

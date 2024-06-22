@@ -1,17 +1,17 @@
 [
   {
-    "src": "/backgrounds/1.webp",
-    "title": "First slide label",
-    "description": "Some representative placeholder content for the first slide."
+    "src": "./public/produits/green.jpg",
+    "title": "Pour chat",
+    "description": "Nos chaussures pour chat."
   },
   {
-    "src": "/backgrounds/2.webp",
-    "title": "Second slide label",
-    "description": "Some representative placeholder content for the second slide."
+    "src": "./public/produits/louboutin.jpg",
+    "title": "Pour chatte",
+    "description": "Nos chaussures pour chatte."
   },
   {
-    "src": "/backgrounds/3.webp",
-    "title": "Third slide label",
-    "description": "Some representative placeholder content for the third slide."
+    "src": "./public/produits/marques.jpg",
+    "title": "Nos marques",
+    "description": "Nos marques dont Crocs, Louboutin et Nike."
   }
 ]
