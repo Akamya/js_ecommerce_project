@@ -88,13 +88,20 @@ export const CardsList = (element, items, itemTemplate, searchableFields) => {
 
   // Fonction pour filtrer et paginer les items
   const filterAndPaginate = (perPage = 12) => {
-    // on filtre une premiere fois sur base des dropdown
+    // on filtre une premiere fois sur base de la dropdown de sexe
     if (selectedSexe !== "all") {
       filteredItems = items.filter(
         (item) => item.sexeID === parseInt(selectedSexe)
       );
     } else {
       filteredItems = items;
+    }
+
+    // Ensuite on filtre sur base de la dropdown de marque
+    if (selectedMarque !== "all") {
+      filteredItems = filteredItems.filter(
+        (item) => item.marqueID === parseInt(selectedMarque)
+      );
     }
 
     const value = searchInputValue.toLowerCase();
