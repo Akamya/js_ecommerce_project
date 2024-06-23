@@ -1,6 +1,7 @@
 import { ROUTE_CHANGED_EVENT } from "../framework/app";
 import { Pagination } from "./Pagination";
 import { TextInput } from "./TextInput";
+import { addPanierListeners, loadQuantity } from "./helpers";
 
 /**
  * Un composant pour afficher une liste de cartes paginée et filtrable.
@@ -91,13 +92,7 @@ export const CardsList = (
     return `
       ${filteredItems
         .map((produit) => {
-          const produitDansPanier = panier.find(
-            (product) => product.id == produit.id
-          );
-          let quantity = 0;
-          if (produitDansPanier) {
-            quantity = produitDansPanier.quantity;
-          }
+          const quantity = loadQuantity(panier, produit);
           return itemTemplate(produit, quantity);
         })
         .join("")}
@@ -109,7 +104,7 @@ export const CardsList = (
     // on filtre une premiere fois sur base de la dropdown de sexe
     if (selectedSexe !== "all") {
       filteredItems = items.filter(
-        (item) => item.sexeID === parseInt(selectedSexe)
+        (item) => item.sexeID === parseInt(selectedSexe, 10)
       );
     } else {
       filteredItems = items;
@@ -118,7 +113,7 @@ export const CardsList = (
     // Ensuite on filtre sur base de la dropdown de marque
     if (selectedMarque !== "all") {
       filteredItems = filteredItems.filter(
-        (item) => item.marqueID === parseInt(selectedMarque)
+        (item) => item.marqueID === parseInt(selectedMarque, 10)
       );
     }
 
@@ -179,37 +174,7 @@ export const CardsList = (
       cardsLinks[i].addEventListener("click", cardLinkClickHandler);
     }
     // On ajoute un écouteur d'événement sur chaque bouton de carte
-    filteredItems.forEach((produit) => {
-      //Ajouter les eventListeners correctement
-      const btn_moins = document.querySelector(`#btn_moins_${produit.id}`);
-      const btn_plus = document.querySelector(`#btn_plus_${produit.id}`);
-      const btn_ajout = document.querySelector(`#btn_ajout_${produit.id}`);
-      const counter = document.querySelector(`#counter_${produit.id}`);
-
-      //Pour empecher les valeurs négatives quand on rentre nous même le chiffre dans input https://stackoverflow.com/questions/19233415/how-to-make-type-number-to-positive-numbers-only
-      btn_moins.addEventListener("click", () => {
-        if (counter.value > 0) {
-          counter.value = parseInt(counter.value) - 1;
-        }
-      });
-
-      btn_plus.addEventListener("click", () => {
-        counter.value = parseInt(counter.value) + 1;
-      });
-
-      btn_ajout.addEventListener("click", () => {
-        const elementFromPanier = panier.find(
-          (element) => element.id == produit.id
-        );
-        if (elementFromPanier) {
-          elementFromPanier.quantity = counter.value;
-        } else {
-          panier.push({ id: produit.id, quantity: counter.value });
-        }
-
-        localStorage.setItem("panier", JSON.stringify(panier));
-      });
-    });
+    filteredItems.forEach((element) => addPanierListeners(element, panier));
   };
 
   // Initialisation de la liste de cartes

@@ -1,6 +1,7 @@
 import { CardsList } from "../../components/CardsList";
 import produits from "../../storage/produits.json";
 import { ProduitCard } from "./Partials/ProduitCard";
+import { loadPanier } from "../../components/helpers";
 
 /**
  * Page de la liste des produits
@@ -17,14 +18,7 @@ export const Produits = (element) => {
     
     `;
 
-  const existingPanier = localStorage.getItem("panier");
-  let panier;
-
-  if (existingPanier) {
-    panier = JSON.parse(existingPanier);
-  } else {
-    panier = [];
-  }
+  const panier = loadPanier();
 
   const produitsList = element.querySelector("#produits-list");
 
