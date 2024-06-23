@@ -17,8 +17,23 @@ export const Produits = (element) => {
     
     `;
 
+  const existingPanier = localStorage.getItem("panier");
+  let panier;
+
+  if (existingPanier) {
+    panier = JSON.parse(existingPanier);
+  } else {
+    panier = [];
+  }
+
   const produitsList = element.querySelector("#produits-list");
 
   // Fonction pour afficher les produits
-  CardsList(produitsList, produits, ProduitCard, ["name", "description"]);
+  CardsList(
+    produitsList,
+    produits,
+    ProduitCard,
+    ["name", "description"],
+    panier
+  );
 };

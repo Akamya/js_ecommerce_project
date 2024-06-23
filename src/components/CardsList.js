@@ -9,9 +9,16 @@ import { TextInput } from "./TextInput";
  * @param {Object[]} items
  * @param {Function} itemTemplate
  * @param {string[]} searchableFields
+ * @param {object[]} panier
  * @returns {void}
  */
-export const CardsList = (element, items, itemTemplate, searchableFields) => {
+export const CardsList = (
+  element,
+  items,
+  itemTemplate,
+  searchableFields,
+  panier
+) => {
   // On récupère le numéro de page et la valeur du champ de recherche dans l'URL
   let currentPage =
     parseInt(new URL(window.location).searchParams.get("page")) || 1;
@@ -82,7 +89,18 @@ export const CardsList = (element, items, itemTemplate, searchableFields) => {
 
     // On passe le template de l'item à la fonction map pour générer une liste de cartes
     return `
-      ${filteredItems.map(itemTemplate).join("")}
+      ${filteredItems
+        .map((produit) => {
+          const produitDansPanier = panier.find(
+            (product) => product.id == produit.id
+          );
+          let quantity = 0;
+          if (produitDansPanier) {
+            quantity = produitDansPanier.quantity;
+          }
+          return itemTemplate(produit, quantity);
+        })
+        .join("")}
     `;
   };
 
@@ -162,7 +180,7 @@ export const CardsList = (element, items, itemTemplate, searchableFields) => {
     }
     // On ajoute un écouteur d'événement sur chaque bouton de carte
     filteredItems.forEach((produit) => {
-      // TODO Ajouter les eventListeners correctement
+      //Ajouter les eventListeners correctement
       const btn_moins = document.querySelector(`#btn_moins_${produit.id}`);
       const btn_plus = document.querySelector(`#btn_plus_${produit.id}`);
       const btn_ajout = document.querySelector(`#btn_ajout_${produit.id}`);
@@ -177,6 +195,19 @@ export const CardsList = (element, items, itemTemplate, searchableFields) => {
 
       btn_plus.addEventListener("click", () => {
         counter.value = parseInt(counter.value) + 1;
+      });
+
+      btn_ajout.addEventListener("click", () => {
+        const elementFromPanier = panier.find(
+          (element) => element.id == produit.id
+        );
+        if (elementFromPanier) {
+          elementFromPanier.quantity = counter.value;
+        } else {
+          panier.push({ id: produit.id, quantity: counter.value });
+        }
+
+        localStorage.setItem("panier", JSON.stringify(panier));
       });
     });
   };

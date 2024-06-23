@@ -13,9 +13,10 @@ import { MarquesBadge } from "./MarquesBadge";
  * Affiche une carte d'utilisateur
  *
  * @param {Produit} produit
+ * @param {Number} quantity
  * @returns {string} HTML string
  */
-export const ProduitCard = (produit) => {
+export const ProduitCard = (produit, quantity) => {
   return `
     <div class="col p-2">
       <div class="card produit-link">
@@ -40,9 +41,9 @@ export const ProduitCard = (produit) => {
           Pour empecher les valeurs négatives quand on rentre nous même le chiffre dans input
           https://stackoverflow.com/questions/19233415/how-to-make-type-number-to-positive-numbers-only -->
 
-          <input type="number" value="0" min="0" oninput="validity.valid||(value='');" id="counter_${
-            produit.id
-          }" style="width: 2em" >
+          <input type="number" value="${quantity}" min="0" oninput="validity.valid||(value='');" id="counter_${
+    produit.id
+  }" style="width: 2em" >
           <button type="button" class="btn btn-primary btn-sm" id="btn_plus_${
             produit.id
           }">+</button>
