@@ -196,11 +196,4 @@ export const CardsList = (
     // On filtre et on pagine les items
     filterAndPaginate();
   });
-
-  // On ajoute un écouteur d'événement sur le bouton précédent du navigateur
-  window.addEventListener("popstate", () => {
-    currentPage =
-      parseInt(new URL(window.location).searchParams.get("page")) || 1;
-    filterAndPaginate();
-  });
 };
