@@ -32,10 +32,23 @@ export const ProduitCard = (produit) => {
         </a>
 
         <div>
-          <button type="button" class="btn btn-primary btn-sm">-</button>
-          <input size="1"  >
-          <button type="button" class="btn btn-primary btn-sm">+</button>
-          <button type="button" class="btn btn-primary btn-sm">Ajouter au panier</button>
+          <button type="button" class="btn btn-primary btn-sm" id="btn_moins_${
+            produit.id
+          }">-</button>
+          
+          <!-- 
+          Pour empecher les valeurs négatives quand on rentre nous même le chiffre dans input
+          https://stackoverflow.com/questions/19233415/how-to-make-type-number-to-positive-numbers-only -->
+
+          <input type="number" value="0" min="0" oninput="validity.valid||(value='');" id="counter_${
+            produit.id
+          }" style="width: 2em" >
+          <button type="button" class="btn btn-primary btn-sm" id="btn_plus_${
+            produit.id
+          }">+</button>
+          <button type="button" class="btn btn-primary btn-sm" id="btn_ajout_${
+            produit.id
+          }">Ajouter au panier</button>
         </div>
 
       </div>
