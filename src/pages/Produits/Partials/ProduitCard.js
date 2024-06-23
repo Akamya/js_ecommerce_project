@@ -18,21 +18,27 @@ import { MarquesBadge } from "./MarquesBadge";
 export const ProduitCard = (produit) => {
   return `
     <div class="col p-2">
-      <a class="card produit-link" href="/produit?id=${produit.id}">
-        <div class="card-body">
-          <img src="${produit.image}" class="card-image">
-          <h2 class="card-title">${produit.name}</h2>
-          <p class="card-text">${produit.description}</p>
-          ${SexeBadge(produit.sexeID)}
-          ${MarquesBadge(produit.marqueID)}
-          <p class="w-100 text-end">${produit.price}</p>
-          <button type="button" class="btn btn-dark btn-sm">-</button>
-          <input>
-          <button type="button" class="btn btn-dark btn-sm">+</button>
-          <button type="button" class="btn btn-dark btn-sm">Ajouter au panier</button>
-          
+      <div class="card produit-link">
+
+        <a href="/produit?id=${produit.id}">
+          <div class="card-body">
+              <img src="${produit.image}" class="card-image">
+              <h2 class="card-title">${produit.name}</h2>
+              <p class="card-text">${produit.description}</p>
+              ${SexeBadge(produit.sexeID)}
+              ${MarquesBadge(produit.marqueID)}
+              <p class="w-100 text-end">${produit.price}</p>
+          </div>
+        </a>
+
+        <div>
+          <button type="button" class="btn btn-primary btn-sm">-</button>
+          <input size="1"  >
+          <button type="button" class="btn btn-primary btn-sm">+</button>
+          <button type="button" class="btn btn-primary btn-sm">Ajouter au panier</button>
         </div>
-      </a>
+
+      </div>
     </div>
     `;
 };
