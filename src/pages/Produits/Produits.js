@@ -14,6 +14,7 @@ export const Produits = (element) => {
       <h1>Produits</h1>
     </div>
     <div id="produits-list"></div>
+    
     `;
 
   const produitsList = element.querySelector("#produits-list");

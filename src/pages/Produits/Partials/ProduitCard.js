@@ -26,6 +26,10 @@ export const ProduitCard = (produit) => {
           ${SexeBadge(produit.sexeID)}
           ${MarquesBadge(produit.marqueID)}
           <p class="w-100 text-end">${produit.price}</p>
+          <button type="button" class="btn btn-dark btn-sm">-</button>
+          <input>
+          <button type="button" class="btn btn-dark btn-sm">+</button>
+          <button type="button" class="btn btn-dark btn-sm">Ajouter au panier</button>
           
         </div>
       </a>
