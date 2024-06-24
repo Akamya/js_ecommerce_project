@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "image": "./public/produits/green.jpg",
+    "image": "/static/public/produits/green.jpg",
     "name": "Nike",
     "description": "jean.martin@example.com",
     "sexeID": 1,
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "image": "./public/produits/orange.jpg",
+    "image": "/static/images/orange.jpg",
     "name": "Louboutin",
     "description": "sophie.lambert@example.com",
     "sexeID": 1,
