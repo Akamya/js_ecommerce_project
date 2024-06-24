@@ -1,7 +1,4 @@
-import { ROUTE_CHANGED_EVENT } from "../framework/app";
-import { Pagination } from "./Pagination";
-import { TextInput } from "./TextInput";
-import { loadQuantity } from "./helpers";
+import { loadQuantity, addPanierListeners } from "./helpers";
 
 /**
  * Un composant pour afficher un tableau paginé et filtrable.
@@ -21,7 +18,7 @@ export const PanierTable = (
   tableHeadings,
   panier
 ) => {
-  const filteredItems = panier.map((elementPanier) => {
+  const panierItems = panier.map((elementPanier) => {
     return items.find((produit) => {
       return produit.id == elementPanier.id;
     });
@@ -43,26 +40,36 @@ export const PanierTable = (
       <tbody>
       </tbody>
     </table>
+    <button type="button" class="btn btn-primary btn-sm">Passer la commande</button>
     `;
 
   const listElement = element.querySelector(`#${id} tbody`);
 
-  const renderList = (filteredItems) => {
-    if (filteredItems.length === 0) {
+  // Construit l'html du tableau
+  const renderList = (panierItems) => {
+    if (panierItems.length === 0) {
       return `
         <td colspan="4" class="text-center">Aucun produit dans la panier</td>
         `;
     }
 
     return `
-      ${filteredItems
+      ${panierItems
         .map((produit) => {
+          // On regarde la quantité de ce produit dans le panier
           const quantity = loadQuantity(panier, produit);
+          // On retourne l'html pour le rendu du produit(une ligne)
           return itemTemplate(produit, quantity);
         })
         .join("")}
     `;
   };
 
-  listElement.innerHTML = renderList(filteredItems);
+  // On injecte l'html dans la page
+  listElement.innerHTML = renderList(panierItems);
+
+  // On met des eventlistener sur les boutons
+  panierItems.forEach((produit) => {
+    addPanierListeners(produit, panier);
+  });
 };

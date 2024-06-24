@@ -27,7 +27,7 @@ export const Panier = (element) => {
     produitsList,
     produits,
     ProduitRow,
-    ["Produit", "Quantités", "Prix"],
+    ["", "Produit", "Quantités", "Prix", ""],
     panier
   );
 };
