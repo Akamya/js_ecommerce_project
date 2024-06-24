@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "/public/produits/blue.jpg",
+    "image": "/static/images/blue.jpg",
     "name": "Crocs",
     "description": "Paillettes",
     "sexeID": 2,
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "image": "/static/public/produits/green.jpg",
+    "image": "/static/images/green.jpg",
     "name": "Nike",
     "description": "jean.martin@example.com",
     "sexeID": 1,
@@ -28,7 +28,7 @@
   },
   {
     "id": 4,
-    "image": "./public/produits/pink.jpg",
+    "image": "/static/images/pink.jpg",
     "name": "Khalid Ben Ali",
     "description": "khalid.benali@example.com",
     "sexeID": 2,
@@ -37,7 +37,7 @@
   },
   {
     "id": 5,
-    "image": "./public/produits/turquoise.jpg",
+    "image": "/static/images/turquoise.jpg",
     "name": "Laura Dubois",
     "description": "laura.dubois@example.com",
     "sexeID": 1,
@@ -46,7 +46,7 @@
   },
   {
     "id": 6,
-    "image": "./public/produits/white.jpg",
+    "image": "/static/images/white.jpg",
     "name": "Luc Lefevre",
     "description": "luc.lefevre@example.com",
     "sexeID": 2,
@@ -55,7 +55,7 @@
   },
   {
     "id": 7,
-    "image": "./public/produits/black.jpg",
+    "image": "/static/images/black.jpg",
     "name": "Julie Verhoeven",
     "description": "julie.verhoeven@example.com",
     "sexeID": 1,
@@ -64,7 +64,7 @@
   },
   {
     "id": 8,
-    "image": "./public/produits/brown.jpg",
+    "image": "/static/images/brown.jpg",
     "name": "Pierre Janssens",
     "description": "pierre.janssens@example.com",
     "sexeID": 2,
@@ -73,7 +73,7 @@
   },
   {
     "id": 9,
-    "image": "./public/produits/purple.jpg",
+    "image": "/static/images/purple.jpg",
     "name": "Fatoumata Koulibaly",
     "description": "fatoumata.koulibaly@example.com",
     "sexeID": 1,
@@ -82,7 +82,7 @@
   },
   {
     "id": 10,
-    "image": "./public/produits/yellow.jpg",
+    "image": "/static/images/yellow.jpg",
     "name": "Nicolas Leroy",
     "description": "nicolas.leroy@example.com",
     "sexeID": 2,
@@ -91,7 +91,7 @@
   },
   {
     "id": 11,
-    "image": "./public/produits/gris.jpg",
+    "image": "/static/images/gris.jpg",
     "name": "Camille Mercier",
     "description": "camille.mercier@example.com",
     "sexeID": 1,
@@ -100,7 +100,7 @@
   },
   {
     "id": 12,
-    "image": "./public/produits/marine.jpg",
+    "image": "/static/images/marine.jpg",
     "name": "Hugo Maes",
     "description": "hugo.maes@example.com",
     "sexeID": 2,
@@ -109,7 +109,7 @@
   },
   {
     "id": 13,
-    "image": "./public/produits/rubans.jpg",
+    "image": "/static/images/rubans.jpg",
     "name": "Elise Simon",
     "description": "elise.simon@example.com",
     "sexeID": 1,
@@ -118,7 +118,7 @@
   },
   {
     "id": 14,
-    "image": "./public/produits/flowers.jpg",
+    "image": "/static/images/flowers.jpg",
     "name": "Antoine Thomas",
     "description": "antoine.thomas@example.com",
     "sexeID": 2,
@@ -127,7 +127,7 @@
   },
   {
     "id": 15,
-    "image": "./public/produits/butterflies.jpg",
+    "image": "/static/images/butterflies.jpg",
     "name": "Amina Fabre",
     "description": "amina.fabre@example.com",
     "sexeID": 1,
@@ -136,7 +136,7 @@
   },
   {
     "id": 16,
-    "image": "./public/produits/hearts.jpg",
+    "image": "/static/images/hearts.jpg",
     "name": "Lucas Dupuis",
     "description": "lucas.dupuis@example.com",
     "sexeID": 2,
@@ -145,7 +145,7 @@
   },
   {
     "id": 17,
-    "image": "./public/produits/icecreams.jpg",
+    "image": "/static/images/icecreams.jpg",
     "name": "Cécile Dufour",
     "description": "cecile.dufour@example.com",
     "sexeID": 1,
@@ -154,7 +154,7 @@
   },
   {
     "id": 18,
-    "image": "./public/produits/moons.jpg",
+    "image": "/static/images/moons.jpg",
     "name": "David Laurent",
     "description": "david.laurent@example.com",
     "sexeID": 2,
@@ -163,7 +163,7 @@
   },
   {
     "id": 19,
-    "image": "./public/produits/stars.jpg",
+    "image": "/static/images/stars.jpg",
     "name": "Alice Dubois",
     "description": "alice.dubois@example.com",
     "sexeID": 1,
@@ -172,7 +172,7 @@
   },
   {
     "id": 20,
-    "image": "./public/produits/suns.jpg",
+    "image": "/static/images/suns.jpg",
     "name": "Julien Petit",
     "description": "julien.petit@example.com",
     "sexeID": 2,
@@ -181,7 +181,7 @@
   },
   {
     "id": 21,
-    "image": "./public/produits/chocolate.jpg",
+    "image": "/static/images/chocolate.jpg",
     "name": "Julien Petit",
     "description": "julien.petit@example.com",
     "sexeID": 2,
