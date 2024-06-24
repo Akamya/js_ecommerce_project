@@ -1,4 +1,4 @@
-import { loadQuantity, addPanierListeners } from "./helpers";
+import { loadQuantity, addPanierListeners, calculTotal } from "./helpers";
 
 /**
  * Un composant pour afficher un tableau paginé et filtrable.
@@ -18,6 +18,8 @@ export const PanierTable = (
   tableHeadings,
   panier
 ) => {
+  const total = calculTotal(panier);
+
   const panierItems = panier.map((elementPanier) => {
     return items.find((produit) => {
       return produit.id == elementPanier.id;
@@ -40,8 +42,27 @@ export const PanierTable = (
       <tbody>
       </tbody>
     </table>
-    <button type="button" class="btn btn-primary btn-sm">Passer la commande</button>
+    <div class="totalPanier">
+    <p>Total</p>
+    <p>${total}</p>
+    </div>
+    <div class="boutonsImportantsPanier">
+    <button type="button" class="btn btn-primary btn-sm" id="commander">Passer la commande</button>
+    <button type="button" class="btn btn-danger btn-sm" id="vider">Vider le panier</button>
+    </div>
+    
     `;
+
+  const commandButton = document.querySelector("#commander");
+  commandButton.addEventListener("click", () => {
+    alert("Malheureusement nous sommes en rupture de stock.");
+  });
+
+  const emptyButton = document.querySelector("#vider");
+  emptyButton.addEventListener("click", () => {
+    localStorage.removeItem("panier");
+    window.location.reload();
+  });
 
   const listElement = element.querySelector(`#${id} tbody`);
 

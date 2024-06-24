@@ -8,7 +8,7 @@ export function loadPanier() {
   return panier;
 }
 
-// panier: Array représantant le panier au format [{id, quantity}]
+// panier: Array représantant le panier au format [{id, quantity, price}]
 // produit: le produit qui nous intéresse. Au format {id, name, description...}
 
 // retourne la quantité du produit dans le panier
@@ -24,7 +24,7 @@ export function loadQuantity(panier, produit) {
   return quantity;
 }
 
-// panier: Array représantant le panier au format [{id, quantity}]
+// panier: Array représantant le panier au format [{id, quantity, price}]
 // produit: le produit qui nous intéresse. Au format {id, name, description...}
 
 // Ajoute des eventlistener sur les boutons pour le produit
@@ -62,13 +62,21 @@ export function addPanierListeners(produit, panier) {
         elementFromPanier.quantity = counter.value;
       } else {
         // Pas encore dans le panier alors on l'ajour dans le panier
-        panier.push({ id: produit.id, quantity: counter.value });
+        panier.push({
+          id: produit.id,
+          quantity: counter.value,
+          price: produit.price,
+        });
+        // j'ai ajouté la propriété price pour simplifier le calcul de la somme
         // [] = un array, {} = objet
       }
 
       const panierFiltered = panier.filter((element) => element.quantity > 0);
 
       localStorage.setItem("panier", JSON.stringify(panierFiltered));
+
+      // Refresh la page pour voir le total du panier
+      window.location.reload();
     });
   }
 
@@ -90,4 +98,16 @@ export function addPanierListeners(produit, panier) {
       window.location.reload();
     });
   }
+}
+
+// Calcul le total du panier
+export function calculTotal(panier) {
+  let total = 0;
+  panier.forEach((element) => {
+    total =
+      total + parseInt(element.quantity, 10) * parseInt(element.price, 10);
+    // parsint pcq il le voit comme un NaN si je le met sur l'html
+    // pcq dans localstorage tt est en string
+  });
+  return total;
 }
