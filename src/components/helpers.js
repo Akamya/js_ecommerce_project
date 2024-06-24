@@ -45,6 +45,8 @@ export function addPanierListeners(produit, panier) {
       panier.push({ id: produit.id, quantity: counter.value });
     }
 
-    localStorage.setItem("panier", JSON.stringify(panier));
+    const panierFiltered = panier.filter((element) => element.quantity > 0);
+
+    localStorage.setItem("panier", JSON.stringify(panierFiltered));
   });
 }
