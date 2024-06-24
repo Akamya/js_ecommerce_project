@@ -1,16 +1,16 @@
 [
   {
-    "src": "./public/produits/green.jpg",
+    "src": "/static/images/green.jpg",
     "title": "Pour chat",
     "description": "Nos chaussures pour chat."
   },
   {
-    "src": "./public/produits/louboutin.jpg",
+    "src": "/static/images/louboutin.jpg",
     "title": "Pour chatte",
     "description": "Nos chaussures pour chatte."
   },
   {
-    "src": "./public/produits/marques.jpg",
+    "src": "/static/images/marques.jpg",
     "title": "Nos marques",
     "description": "Nos marques dont Crocs, Louboutin et Nike."
   }
