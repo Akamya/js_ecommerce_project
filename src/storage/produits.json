@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "./public/produits/blue.jpg",
+    "image": "/public/produits/blue.jpg",
     "name": "Crocs",
     "description": "Paillettes",
     "sexeID": 2,
