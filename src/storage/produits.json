@@ -2,190 +2,190 @@
   {
     "id": 1,
     "image": "/static/images/blue.jpg",
-    "name": "Crocs",
-    "description": "Paillettes",
+    "name": "Bleu froufrou",
+    "description": "Ce modèle est une variante doublée des Crocs classiques, parfait pour les journées plus fraîches. La couleur bleu froufrou est une teinte douce et agréable qui ajoute une touche de fraîcheur et de féminité.",
     "sexeID": 2,
     "price": "13€",
-    "marqueID": 2
+    "marqueID": 1
   },
   {
     "id": 2,
-    "image": "/static/images/green.jpg",
-    "name": "Nike",
-    "description": "jean.martin@example.com",
+    "image": "/static/images/blackRedNike.jpg",
+    "name": "Classique",
+    "description": "Les Nike Air Force 1 classiques sont emblématiques avec leur design intemporel. Elles sont connues pour leur confort et leur polyvalence, adaptées à toutes les occasions.",
     "sexeID": 1,
-    "price": "13€",
+    "price": "130€",
     "marqueID": 2
   },
   {
     "id": 3,
     "image": "/static/images/orange.jpg",
-    "name": "Louboutin",
-    "description": "sophie.lambert@example.com",
-    "sexeID": 1,
-    "price": "13€",
+    "name": "Orange du sud",
+    "description": "Les Crocs Classic Clog en orange du sud offrent une couleur vive et chaleureuse, rappelant les couchers de soleil tropicaux. Idéales pour ajouter une touche de couleur à votre tenue estivale.",
+    "sexeID": 2,
+    "price": "20€",
     "marqueID": 1
   },
   {
     "id": 4,
     "image": "/static/images/pink.jpg",
-    "name": "Khalid Ben Ali",
-    "description": "khalid.benali@example.com",
+    "name": "Rose bonbon",
+    "description": "Ce modèle classique en rose bonbon est à la fois sucré et ludique, parfait pour ceux qui aiment les couleurs vives et gaies. Idéales pour une touche de fantaisie et de joie.",
     "sexeID": 2,
-    "price": "13€",
-    "marqueID": 3
+    "price": "25€",
+    "marqueID": 1
   },
   {
     "id": 5,
-    "image": "/static/images/turquoise.jpg",
-    "name": "Laura Dubois",
-    "description": "laura.dubois@example.com",
-    "sexeID": 1,
-    "price": "13€",
-    "marqueID": 2
+    "image": "/static/images/louboutinRougee.jpg",
+    "name": "Rouge strass",
+    "description": "Ces escarpins en rouge sont ornés de cristaux scintillants, ajoutant une touche de glamour et d'éclat à chaque pas. Idéales pour les soirées spéciales où vous voulez briller.",
+    "sexeID": 2,
+    "price": "230€",
+    "marqueID": 3
   },
   {
     "id": 6,
-    "image": "/static/images/white.jpg",
-    "name": "Luc Lefevre",
-    "description": "luc.lefevre@example.com",
-    "sexeID": 2,
-    "price": "13€",
-    "marqueID": 2
+    "image": "/static/images/louboutinClassique.jpg",
+    "name": "Fer rouge",
+    "description": "Ces louboutins en fer rouge présentent une finition métallisée qui capte la lumière de manière spectaculaire. Parfaites pour ajouter une touche moderne et audacieuse à votre tenue.",
+    "sexeID": 1,
+    "price": "200€",
+    "marqueID": 3
   },
   {
     "id": 7,
-    "image": "/static/images/black.jpg",
-    "name": "Julie Verhoeven",
-    "description": "julie.verhoeven@example.com",
+    "image": "/static/images/turquoiseNike.jpg",
+    "name": "Turquoise",
+    "description": "Les Nike Air Max 270 en turquoise apportent une touche vibrante et fraîche à votre look. Leur grande bulle d'air au talon assure un confort maximal et un amorti supérieur.",
     "sexeID": 1,
-    "price": "13€",
+    "price": "120€",
     "marqueID": 2
   },
   {
     "id": 8,
-    "image": "/static/images/brown.jpg",
-    "name": "Pierre Janssens",
-    "description": "pierre.janssens@example.com",
+    "image": "/static/images/louboutinHaute.jpg",
+    "name": "Mary Poppins",
+    "description": "Inspirées par le charme intemporel de Mary Poppins, ces chaussures Mary Jane combinent élégance et confort. Leur design classique avec une touche ludique en fait un choix parfait pour diverses occasions.",
     "sexeID": 2,
-    "price": "13€",
-    "marqueID": 2
+    "price": "138€",
+    "marqueID": 3
   },
   {
     "id": 9,
-    "image": "/static/images/purple.jpg",
-    "name": "Fatoumata Koulibaly",
-    "description": "fatoumata.koulibaly@example.com",
-    "sexeID": 1,
-    "price": "13€",
+    "image": "/static/images/grayNike.jpg",
+    "name": "Gris sport",
+    "description": "Ces chaussures de course en gris sport sont légères et réactives, conçues pour les coureurs à la recherche de performances optimales. La couleur grise donne une allure élégante et athlétique.",
+    "sexeID": 2,
+    "price": "150€",
     "marqueID": 2
   },
   {
     "id": 10,
     "image": "/static/images/yellow.jpg",
-    "name": "Nicolas Leroy",
-    "description": "nicolas.leroy@example.com",
+    "name": "Jaune sahara",
+    "description": "Le modèle en jaune Sahara évoque les dunes dorées et le soleil éclatant du désert. Cette couleur vibrante et énergique est parfaite pour les journées ensoleillées.",
     "sexeID": 2,
-    "price": "13€",
-    "marqueID": 2
+    "price": "70€",
+    "marqueID": 1
   },
   {
     "id": 11,
-    "image": "/static/images/gris.jpg",
-    "name": "Camille Mercier",
-    "description": "camille.mercier@example.com",
+    "image": "/static/images/louboutinNoir.jpg",
+    "name": "Soirée dansante",
+    "description": "Ce sont des escarpins peep-toe élégants et sophistiqués, parfaits pour une soirée dansante. Leur design raffiné vous donneront une allure gracieuse.",
     "sexeID": 1,
-    "price": "13€",
-    "marqueID": 2
+    "price": "400€",
+    "marqueID": 3
   },
   {
     "id": 12,
-    "image": "/static/images/marine.jpg",
-    "name": "Hugo Maes",
-    "description": "hugo.maes@example.com",
+    "image": "/static/images/whiteNike.jpg",
+    "name": "Blanc classique",
+    "description": "Les Nike Air Force 1 blanches classiques sont un must-have intemporel. Elles offrent un style propre et minimaliste.",
     "sexeID": 2,
-    "price": "13€",
+    "price": "160€",
     "marqueID": 2
   },
   {
     "id": 13,
-    "image": "/static/images/rubans.jpg",
-    "name": "Elise Simon",
-    "description": "elise.simon@example.com",
+    "image": "/static/images/orangeBlackNike.jpg",
+    "name": "Brownie",
+    "description": "Les Nike Blazer Mid '77 en teinte brownie offrent un look rétro avec une touche de couleur chaude et terreuse. Parfaites pour un style vintage et décontracté.",
     "sexeID": 1,
-    "price": "13€",
+    "price": "189€",
     "marqueID": 2
   },
   {
     "id": 14,
     "image": "/static/images/flowers.jpg",
-    "name": "Antoine Thomas",
-    "description": "antoine.thomas@example.com",
-    "sexeID": 2,
-    "price": "13€",
-    "marqueID": 2
+    "name": "Fleurs d'été",
+    "description": "Ces Crocs sont ornées d'un motif floral coloré, parfaites pour capturer l'esprit de l'été. Les fleurs d'été apportent une touche de nature et de vitalité à vos pieds.",
+    "sexeID": 1,
+    "price": "16€",
+    "marqueID": 1
   },
   {
     "id": 15,
-    "image": "/static/images/butterflies.jpg",
-    "name": "Amina Fabre",
-    "description": "amina.fabre@example.com",
+    "image": "/static/images/louboutinNude.jpg",
+    "name": "Beige sobre",
+    "description": "Beige sobre sont des escarpins à bout pointu avec une découpe d'Orsay, offrant une élégance discrète et raffinée. Parfaits pour une tenue professionnelle ou un look minimaliste chic.",
     "sexeID": 1,
-    "price": "13€",
-    "marqueID": 2
+    "price": "400€",
+    "marqueID": 3
   },
   {
     "id": 16,
-    "image": "/static/images/hearts.jpg",
-    "name": "Lucas Dupuis",
-    "description": "lucas.dupuis@example.com",
-    "sexeID": 2,
-    "price": "13€",
+    "image": "/static/images/orangeNike.jpg",
+    "name": "Orange sport",
+    "description": "Ces chaussures de course en orange sport sont dynamiques et énergétiques. Elles sont conçues pour offrir une sensation de légèreté et de flexibilité maximale pendant vos séances d'entraînement.",
+    "sexeID": 1,
+    "price": "155€",
     "marqueID": 2
   },
   {
     "id": 17,
-    "image": "/static/images/icecreams.jpg",
-    "name": "Cécile Dufour",
-    "description": "cecile.dufour@example.com",
-    "sexeID": 1,
-    "price": "13€",
-    "marqueID": 2
+    "image": "/static/images/louboutinPink.jpg",
+    "name": "Rose coquine",
+    "description": "Rose coquine sont audacieuses et séduisantes, avec leurs découpes festonnées et leur couleur vive. Idéales pour faire une déclaration de style.",
+    "sexeID": 2,
+    "price": "180€",
+    "marqueID": 3
   },
   {
     "id": 18,
     "image": "/static/images/moons.jpg",
-    "name": "David Laurent",
-    "description": "david.laurent@example.com",
+    "name": "Lune mystérieuse",
+    "description": "Le modèle lune mystérieuse présente une teinte sombre et élégante, avec peut-être des motifs subtils rappelant une nuit étoilée ou une surface lunaire, pour ceux qui préfèrent un look plus énigmatique.",
     "sexeID": 2,
-    "price": "13€",
-    "marqueID": 2
+    "price": "30€",
+    "marqueID": 1
   },
   {
     "id": 19,
     "image": "/static/images/stars.jpg",
-    "name": "Alice Dubois",
-    "description": "alice.dubois@example.com",
-    "sexeID": 1,
-    "price": "13€",
-    "marqueID": 2
+    "name": "Etoile filante",
+    "description": " Ce modèle présente une couleur ou un motif scintillant, rappelant la beauté et la magie des étoiles filantes. Parfait pour ajouter une touche de glamour et de féerie à votre tenue.",
+    "sexeID": 2,
+    "price": "36€",
+    "marqueID": 1
   },
   {
     "id": 20,
-    "image": "/static/images/suns.jpg",
-    "name": "Julien Petit",
-    "description": "julien.petit@example.com",
+    "image": "/static/images/louboutinRouge.jpg",
+    "name": "Rouge passion",
+    "description": "Rouge passion sont l'incarnation de la séduction et du glamour. Leur couleur rouge intense et leur silhouette élancée en font un choix incontournable pour toute garde-robe élégante.",
     "sexeID": 2,
-    "price": "13€",
-    "marqueID": 2
+    "price": "900€",
+    "marqueID": 3
   },
   {
     "id": 21,
-    "image": "/static/images/chocolate.jpg",
-    "name": "Julien Petit",
-    "description": "julien.petit@example.com",
+    "image": "/static/images/redNike.jpg",
+    "name": "Coccinelle",
+    "description": "Les Nike Air Max 90 coccinelle combinent une base noire avec des accents rouges et des motifs de coccinelles, ajoutant une touche ludique et originale à votre style.",
     "sexeID": 2,
-    "price": "13€",
+    "price": "21€",
     "marqueID": 2
   }
 ]

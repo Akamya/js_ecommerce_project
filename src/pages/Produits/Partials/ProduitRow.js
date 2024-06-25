@@ -17,7 +17,7 @@ export const ProduitRow = (produit, quantity) => {
       <td>${produit.name}</td>
       <td> 
         <button type="button" class="btn btn-primary btn-sm" id="btn_moins_${produit.id}">-</button> 
-        <input type="number" value="${quantity}" min="0" oninput="validity.valid||(value='');"
+        <input class="inputCenter" type="number" value="${quantity}" min="0" oninput="validity.valid||(value='');"
           id="counter_${produit.id}" style="width: 2em" >
         <button type="button" class="btn btn-primary btn-sm" id="btn_plus_${produit.id}">+</button> <button type="button" class="btn btn-primary btn-sm" 
           id="btn_ajout_${produit.id}">Valider</button></td>

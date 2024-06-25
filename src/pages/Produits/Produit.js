@@ -34,24 +34,37 @@ export const Produit = (element) => {
   const quantity = loadQuantity(panier, produit);
 
   element.innerHTML = `
-    <img src="${produit.image}" class="card-image">
+  <div class="produitCenter">
+  <img src="${produit.image}" class="card-image">
     <h1>${produit.name}</h1>
-    <p>${produit.description}</p>
+    <p class="produitText">${produit.description}</p>
     ${SexeBadge(produit.sexeID)}
     ${MarquesBadge(produit.marqueID)}
-    <p class="w-25 text-end">${produit.price}</p>
+    <p class="w-75 text-end" style="font-weight: bold;">${produit.price}</p>
 
-    <button type="button" class="btn btn-primary btn-sm" 
-      id="btn_moins_${produit.id}">-</button>
+    
     
     <!-- Pour empecher les valeurs négatives quand on rentre nous même le chiffre dans input https://stackoverflow.com/questions/19233415/how-to-make-type-number-to-positive-numbers-only -->
 
-    <input type="number" value="${quantity}" min="0" oninput="validity.valid||(value='');"
-      id="counter_${produit.id}" style="width: 2em" >
+    <div class="btnsAjout">
+    <div class="btnsCenter">
     <button type="button" class="btn btn-primary btn-sm" 
+      id="btn_moins_${produit.id}">-</button>
+      <input class="inputCenter" type="number" value="${quantity}" min="0" oninput="validity.valid||(value='');"
+      id="counter_${
+        produit.id
+      }" style="width: 2em"> <button  type="button" class="btn btn-primary btn-sm" 
       id="btn_plus_${produit.id}">+</button>
+    </div>
+    
+    <div class="btnsCenter">
     <button type="button" class="btn btn-primary btn-sm" 
-      id="btn_ajout_${produit.id}">Ajouter au panier</button>
+      id="btn_ajout_${produit.id}">Ajouter au panier</button></div>
+    
+    </div>
+  </div>
+    
+    
     `;
 
   addPanierListeners(produit, panier);

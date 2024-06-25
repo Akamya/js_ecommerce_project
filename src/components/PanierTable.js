@@ -44,7 +44,7 @@ export const PanierTable = (
     </table>
     <div class="totalPanier">
     <p>Total</p>
-    <p>${total}</p>
+    <p>${total}€</p>
     </div>
     <div class="boutonsImportantsPanier">
     <button type="button" class="btn btn-primary btn-sm" id="commander">Passer la commande</button>

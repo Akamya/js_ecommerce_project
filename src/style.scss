@@ -37,6 +37,7 @@ a {
 
 .card-body {
   color: black;
+  text-align: center;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -53,4 +54,43 @@ input[type="number"] {
 
 td img {
   width: 5em;
+}
+
+.inputCenter {
+  text-align: center;
+  padding-bottom: 0.2em;
+}
+
+.totalPanier {
+  display: flex;
+  justify-content: space-around;
+}
+
+.totalPanier p {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.boutonsImportantsPanier {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnsCenter {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+}
+
+#space {
+  margin: 1em;
+}
+
+.produitCenter {
+  text-align: center;
+}
+
+.produitText {
+  width: 50%;
+  margin: auto;
 }
