@@ -12,7 +12,7 @@ export const Layout = () => {
       <main class="container mt-5">
       </main>
       <footer class="text-center mt-auto">
-        <p>&copy; ${year} - Tous droits réservés</p>
+        <p>&copy; ${year} - Tous droits réservés par Elodie Langlet</p>
       </footer>
     </div>
     `;
