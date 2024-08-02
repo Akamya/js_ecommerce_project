@@ -1,3 +1,4 @@
+// Construction du panier, le panier est un array puis il ne faut pas oublier de parser = traduire comme dans le localstorage c'est en string
 export function loadPanier() {
   const existingPanier = localStorage.getItem("panier");
   let panier = [];
@@ -36,8 +37,10 @@ export function addPanierListeners(produit, panier) {
   const counter = document.querySelector(`#counter_${produit.id}`);
   const btn_delete = document.querySelector(`#btn_delete_${produit.id}`);
 
+  // parseInt sur le counter car le counter était un string, donc on doit le transformer en number
   // Bouton moins
   btn_moins.addEventListener("click", () => {
+    // Si la valeur de counter est + grand que 0, je diminue la valeur -1
     if (parseInt(counter.value, 10) > 0) {
       counter.value = parseInt(counter.value, 10) - 1;
     }
@@ -45,6 +48,7 @@ export function addPanierListeners(produit, panier) {
 
   // Bouton plus
   btn_plus.addEventListener("click", () => {
+    // La valeur du bouton + est valeur + 1
     counter.value = parseInt(counter.value, 10) + 1;
   });
 
@@ -68,7 +72,6 @@ export function addPanierListeners(produit, panier) {
           price: produit.price,
         });
         // j'ai ajouté la propriété price pour simplifier le calcul de la somme
-        // [] = un array, {} = objet
       }
 
       const panierFiltered = panier.filter((element) => element.quantity > 0);
@@ -76,7 +79,7 @@ export function addPanierListeners(produit, panier) {
       localStorage.setItem("panier", JSON.stringify(panierFiltered));
 
       // Refresh la page pour voir le total du panier
-      window.location.reload();
+      return addPanierListeners(produit, panier);
     });
   }
 

@@ -9,6 +9,8 @@ import marquesJSON from "../storage/marques.json";
  * @param {HTMLElement} element
  * @returns {void}
  */
+
+// Trouve l'ID dans le json
 export const Home = (element) => {
   const sexeChat = sexeJSON.find((sexe) => sexe.id == 1);
   const sexeChatte = sexeJSON.find((sexe) => sexe.id == 2);
@@ -16,6 +18,7 @@ export const Home = (element) => {
   const nike = marquesJSON.find((marque) => marque.id == 2);
   const louboutin = marquesJSON.find((marque) => marque.id == 3);
 
+  //   Je récupère des données dans le json pour l'afficher dans le html
   element.innerHTML = `
   <h1 style="text-align:center; padding-bottom: 1em;">Cat Shoes</h1>
     ${Carousel(images)}

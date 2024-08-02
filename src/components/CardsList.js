@@ -53,6 +53,12 @@ export const CardsList = (
             <option value="3">Louboutin</option>
           </select>
         </div>
+        <div class="col mb-2">
+          ${TextInput("prixMin", searchInputValue, "number", "Prix minimum")}
+        </div>
+        <div class="col mb-2">
+          ${TextInput("prixMax", searchInputValue, "number", "Prix maximum")}
+        </div>
     </div>
     <div id="${id}" class="row row-cols-2 row-cols-lg-3">
     </div>
@@ -65,6 +71,8 @@ export const CardsList = (
 
   let selectedSexe = "all";
   let selectedMarque = "all";
+  let selectedPrixMin = 0;
+  let selectedPrixMax = 1_000_000;
 
   // Filtre Sexe
   const filtreSelectSexe = document.querySelector("#input-filtre-sexe");
@@ -80,6 +88,19 @@ export const CardsList = (
     filterAndPaginate();
   });
 
+  // Filtre prix min
+  const filtrePrixMin = document.querySelector("#prixMin");
+  filtrePrixMin.addEventListener("change", () => {
+    selectedPrixMin = filtrePrixMin.value;
+    filterAndPaginate();
+  });
+
+  // Filtre prix max
+  const filtrePrixMax = document.querySelector("#prixMax");
+  filtrePrixMax.addEventListener("change", () => {
+    selectedPrixMax = filtrePrixMax.value;
+    filterAndPaginate();
+  });
   // Fonction pour afficher la liste des items
   const renderList = (filteredItems) => {
     if (filteredItems.length === 0) {
@@ -114,6 +135,20 @@ export const CardsList = (
     if (selectedMarque !== "all") {
       filteredItems = filteredItems.filter(
         (item) => item.marqueID === parseInt(selectedMarque, 10)
+      );
+    }
+
+    // Filtre sur base du prix minimum
+    if (selectedPrixMin !== 0) {
+      filteredItems = filteredItems.filter(
+        (item) => parseInt(item.price, 10) >= selectedPrixMin
+      );
+    }
+
+    // Filtre sur base du prix maximum
+    if (selectedPrixMax !== 1_000_000) {
+      filteredItems = filteredItems.filter(
+        (item) => parseInt(item.price, 10) <= selectedPrixMax
       );
     }
 
