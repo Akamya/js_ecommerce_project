@@ -59,6 +59,12 @@ export const CardsList = (
         <div class="col mb-2">
           ${TextInput("prixMax", searchInputValue, "number", "Prix maximum")}
         </div>
+        <div class="mb-3 col">
+          <select class="form-select" id="input-trie">
+            <option value="1">Prix croissant</option>
+            <option value="2">Prix décroissant</option>
+          </select>
+        </div>
     </div>
     <div id="${id}" class="row row-cols-2 row-cols-lg-3">
     </div>
@@ -73,6 +79,7 @@ export const CardsList = (
   let selectedMarque = "all";
   let selectedPrixMin = 0;
   let selectedPrixMax = 1_000_000;
+  let selectedTrie = "1";
 
   // Filtre Sexe
   const filtreSelectSexe = document.querySelector("#input-filtre-sexe");
@@ -101,6 +108,14 @@ export const CardsList = (
     selectedPrixMax = filtrePrixMax.value;
     filterAndPaginate();
   });
+
+  // Filtre trie
+  const filtreTrie = document.querySelector("#input-trie");
+  filtreTrie.addEventListener("change", () => {
+    selectedTrie = filtreTrie.value;
+    filterAndPaginate();
+  });
+
   // Fonction pour afficher la liste des items
   const renderList = (filteredItems) => {
     if (filteredItems.length === 0) {
@@ -149,6 +164,17 @@ export const CardsList = (
     if (selectedPrixMax !== 1_000_000) {
       filteredItems = filteredItems.filter(
         (item) => parseInt(item.price, 10) <= selectedPrixMax
+      );
+    }
+
+    //  Filtre sur base du trie
+    if (selectedTrie == "1") {
+      filteredItems = filteredItems.sort(
+        (item1, item2) => parseInt(item1.price) - parseInt(item2.price)
+      );
+    } else {
+      filteredItems = filteredItems.sort(
+        (item1, item2) => parseInt(item2.price) - parseInt(item1.price)
       );
     }
 
