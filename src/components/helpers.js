@@ -77,7 +77,7 @@ export function addPanierListeners(produit, panier) {
       const panierFiltered = panier.filter((element) => element.quantity > 0);
 
       localStorage.setItem("panier", JSON.stringify(panierFiltered));
-
+      window.location.reload();
       // Refresh la page pour voir le total du panier
       return addPanierListeners(produit, panier);
     });
